@@ -1,12 +1,11 @@
-import type { Metadata } from "next";
-import { Cairo } from "next/font/google";
-import "@/src/app/globals.css";
-import { Header } from "../../components/header/Header";
-import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { notFound } from "next/navigation";
-import { routing } from "@/src/i18n/routing";
-import { Toaster } from "react-hot-toast";
+import "@/src/app/styles/globals.css";
 import { AuthProvider } from "@/src/AuthProvider";
+import { routing } from "@/src/i18n/routing";
+import type { Metadata } from "next";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { Cairo } from "next/font/google";
+import { notFound } from "next/navigation";
+import { Toaster } from "react-hot-toast";
 
 const cairo = Cairo({
   weight: ["400", "700"],
@@ -79,7 +78,7 @@ export default async function RootLayout({
             }}
           />
           <AuthProvider>
-            <Header />
+            {/* <Header /> */}
             <main>{children}</main>
           </AuthProvider>
         </NextIntlClientProvider>
