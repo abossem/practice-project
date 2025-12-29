@@ -1,14 +1,7 @@
-import { AdTape } from "@/src/components/modules/home/AdTape";
-import { Header } from "@/src/components/modules/home/Header";
-import React from "react";
+import { Home } from "@/src/components";
 
 const page = async () => {
-  return (
-    <>
-      <AdTape />
-      <Header />
-    </>
-  );
+  return <Home />;
 };
 
 export default page;
