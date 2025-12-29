@@ -1,6 +1,9 @@
-import { Link } from "@/src/i18n/navigation";
+"use client";
+import { Link, usePathname } from "@/src/i18n/navigation";
 
 export const NavLinks = () => {
+  const pathname = usePathname();
+
   const navItems: { label: string; href: string }[] = [
     {
       label: "Home",
@@ -30,7 +33,9 @@ export const NavLinks = () => {
         <Link
           key={index}
           href={item.href}
-          className="mx-6 text-lg text-gray/15 leading-[150%]"
+          className={`mx-6 text-lg text-gray/15 leading-[150%] ${
+            pathname === item.href ? "bg-[#F1F1F3] rounded-lg px-6 py-3.5" : ""
+          }`}
         >
           {item.label}
         </Link>

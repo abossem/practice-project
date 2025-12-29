@@ -79,7 +79,6 @@ export default async function RootLayout({
             }}
           />
           <AuthProvider>
-            <MainLayoutHeader />
             <main>{children}</main>
           </AuthProvider>
         </NextIntlClientProvider>
