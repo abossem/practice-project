@@ -1,5 +1,6 @@
 import "@/src/app/styles/globals.css";
 import { AuthProvider } from "@/src/AuthProvider";
+import { MainLayoutHeader } from "@/src/components";
 import { routing } from "@/src/i18n/routing";
 import type { Metadata } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
@@ -78,7 +79,7 @@ export default async function RootLayout({
             }}
           />
           <AuthProvider>
-            {/* <Header /> */}
+            <MainLayoutHeader />
             <main>{children}</main>
           </AuthProvider>
         </NextIntlClientProvider>
