@@ -1,7 +1,7 @@
-import React from "react";
+import { SSR } from "@/src/components";
 
 const page = () => {
-  return <div>Login page</div>;
+  return <SSR.Login />;
 };
 
 export default page;

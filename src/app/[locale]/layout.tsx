@@ -40,7 +40,7 @@ export default async function RootLayout({
     >
       <body
         dir={locale === "en" ? "ltf" : "rtl"}
-        className={`${cairo.className} flex flex-col min-h-screen [&>main]:flex-1`}
+        className={`${cairo.className} flex flex-col min-h-screen [&>main]:flex-1 bg-bg-primary`}
       >
         <NextIntlClientProvider>
           <Toaster
@@ -77,9 +77,7 @@ export default async function RootLayout({
               },
             }}
           />
-          <AuthProvider>
-            <main>{children}</main>
-          </AuthProvider>
+          <AuthProvider>{children}</AuthProvider>
         </NextIntlClientProvider>
       </body>
     </html>
