@@ -4,5 +4,11 @@
     "signUp": "Sign Up",
     "login": "Log In",
     "contact": "Contact Us"
+  },
+  "auth": {
+    "testimonials": {
+      "title": "Students Testimonials",
+      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
   }
 }
